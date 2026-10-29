@@ -36,7 +36,7 @@ export const projects = [
   {
     title: 'Awesome Privacy',
     description: 'A list of privacy-respscting software and services',
-    icon: 'https://awesome-privacy.xyz/awesome-privacy.png',
+    icon: 'https://awesome-privacy.xyz/favicon.png',
     link: 'https://github.com/lissy93/awesome-privacy',
   },
   {
