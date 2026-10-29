@@ -66,7 +66,11 @@ It's important to protect your email account, as if a hacker gains access to it 
 ### Networking
 - Use a reputable VPN to keep your IP protected and reduce the amount of browsing data your ISP can log, but understand their [limitations](https://github.com/Lissy93/awesome-privacy#virtual-private-networks).  Good options include [ProtonVPN](https://protonvpn.com) and [Mullvad](https://mullvad.net)
 - Change your routers default password. Anyone connected to your WiFi is able to listen to network traffic, so in order to prevent people you don't know from connecting, use WPA2 and set a strong password.
-- Use a [secure DNS](https://github.com/Lissy93/awesome-privacy#dns) provider, (such as [Cloudflare's 1.1.1.1](https://1.1.1.1/dns/)) to reduce tracking. Ideally configure this on your router, but if that's not possible, then it can be done on each device. 
+- Use a [secure DNS](https://awesome-privacy.xyz/networking/dns-providers) provider, such as [Cloudflare's 1.1.1.1](https://1.1.1.1/dns/), [Quad9](https://quad9.net) or [AdGuard DNS](https://adguard-dns.io), to reduce tracking. Ideally configure this on your router, but if that's not possible, then it can be done on each device. 
+
+
+### Backups
+- Keep encrypted backups of your important data, and test that you can restore them. This protects you from ransomware, theft or damage
 
 
 **📜 See More**: [The Complete Personal Security Checklist](https://github.com/Lissy93/personal-security-checklist/blob/master/CHECKLIST.md)
@@ -75,7 +79,7 @@ It's important to protect your email account, as if a hacker gains access to it 
 
 
 ## OPEN-SOURCE, PRIVACY-FOCUSED SOFTWARE
-Switch to alternative open-source, privacy-respecting apps and services, which won't collect your data, track you or show targetted ads.
+Switch to alternative open-source, privacy-respecting apps and services, which won't collect your data, track you or show targeted ads.
 
 #### Security
 - Password Managers: [BitWarden] | [1Password] *(proprietary)* | [KeePassXC] *(offline)* | [LessPass] *(stateless)*
@@ -85,7 +89,7 @@ Switch to alternative open-source, privacy-respecting apps and services, which w
 - Encrypted Email: [ProtonMail] | [MailFence] | [Tutanota] | (+ also [33Mail] | [anonaddy] for aliasing)
 - Private Browsers: [Brave Browser] | [Firefox] *with [some tweaks](https://restoreprivacy.com/firefox-privacy/)* | [Tor]
 - Non-Tracking Search Engines: [DuckDuckGo] | [StartPage] | [SearXNG] *(self-hosted)* | [Qwant]
-- VPN: [Mullvad] | [ProtonVPN]  | [Windscribe] | [IVPN] *(better still, use [Tor] for anonimity)*. See also [VPN Warning Note]
+- VPN: [Mullvad] | [ProtonVPN]  | [Windscribe] | [IVPN] *(better still, use [Tor] for anonymity)*. See also [VPN Warning Note]
 - App Firewall: [NetGuard] (Android) | [Lockdown] (iOS) | [OpenSnitch] (Linux) | [LuLu] (MacOS)
 
 #### Browser Extensions
@@ -101,7 +105,7 @@ Switch to alternative open-source, privacy-respecting apps and services, which w
 - [Exodus] - Shows which trackers are on your device.
 - [Orbot]- System-wide Tor Proxy.
 - [Island] - Sand-box environment for apps.
-- [NetGuard] - Controll which apps have network access.
+- [NetGuard] - Control which apps have network access.
 - [Greenify] - Control which apps can run in the background.
 - [1.1.1.1] - Use CloudFlare's DNS over HTTPS.
 - [Fing App] - Monitor your home WiFi network for intruders
@@ -122,7 +126,7 @@ Switch to alternative open-source, privacy-respecting apps and services, which w
 - Blogging: [Write Freely].
 - Calendar/ Contacts Sync: [ETE Sync]
 
-📜 **See More**: [Complete List of Privacy-Respecting Sofware](https://github.com/Lissy93/awesome-privacy)
+📜 **See More**: [Complete List of Privacy-Respecting Software](https://github.com/Lissy93/awesome-privacy)
 
 ----
 

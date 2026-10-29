@@ -106,7 +106,7 @@
     priority: Optional
     details: >-
       Avoid logging in on other people's computers since you can't be sure their system is clean. Be especially cautious
-      of public machines, as malware and tracking arr more common here. Using someone else's device is especially
+      of public machines, as malware and tracking are more common here. Using someone else's device is especially
       dangerous with critical accounts like online banking. When using someone else's machine, ensure that you're in a
       private/incognito session (Use Ctrl+Shift+N/ Cmd+Shift+N). This will request the browser to not save your credentials,
       cookies, and browsing history.
@@ -321,7 +321,7 @@
       the green padlock give you a false sense of security, just because a website has SSL certificate, does
       not mean that it is legitimate or trustworthy. [HTTPS-Everywhere](https://www.eff.org/https-everywhere)
       (developed by the [EFF](https://www.eff.org/)) used to be a browser extension/addon that automatically
-      enabled HTTPS on websites, but as of 2022 is now deprecated. In their [accouncement article](https://www.eff.org/)
+      enabled HTTPS on websites, but as of 2022 is now deprecated. In their [announcement article](https://www.eff.org/)
       the EFF explains that most browsers now integrate such protections. Additionally, it provides instructions
       for [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox), Chrome, Edge and Safari browsers on how to enable their HTTPS secure protections.
 
@@ -331,7 +331,7 @@
       Traditional DNS makes requests in plain text for everyone to see. It allows for eavesdropping and
       manipulation of DNS data through man-in-the-middle attacks. Whereas DNS-over-HTTPS performs DNS
       resolution via the HTTPS protocol, meaning data between you and your DNS resolver is encrypted.
-      A popular option is [CloudFlare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare)'s [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1), or compare providers- it is simple to enable in-browser.
+      DNS-over-TLS works just as well. Popular options include [Cloudflare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare)'s [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1), [Quad9](https://quad9.net) and [AdGuard DNS](https://awesome-privacy.xyz/networking/dns-providers/adguard), or [compare providers](https://awesome-privacy.xyz/networking/dns-providers) - it is simple to enable in-browser.
       Note that DoH comes with its own issues, mostly preventing web filtering.
 
   - point: Compartmentalise Your Browsing
@@ -372,9 +372,9 @@
   - point: Block Third-Party Cookies
     priority: Essential
     details: >-
-      Third-party cookies placed on your device by a website other than the one you’re visiting. This
-      poses a privacy risk, as a 3rd entity can collect data from your current session. This guide explains
-      how you can disable 3rd-party cookies, and you can check here ensure this worked.
+      Third-party cookies are placed on your device by a website other than the one you’re visiting. This
+      poses a privacy risk, as a 3rd entity can collect data from your current session. Firefox, Safari and
+      Brave protect against them by default. In Chrome or Edge, turn them off in your privacy settings.
 
   - point: Block Third-Party Trackers
     priority: Essential
@@ -417,8 +417,8 @@
     priority: Optional
     details: >-
       Browser push notifications are a common method for criminals to encourage you to click their link, since
-      it is easy to spoof the source. Be aware of this, and for instructions on disabling browser notifications,
-      see this article.
+      it is easy to spoof the source. Be aware of this, and turn them off in your browser settings, or only
+      allow sites you trust.
 
   - point: Disable Automatic Downloads
     priority: Optional
@@ -474,7 +474,8 @@
     priority: Optional
     details: >-
       WebRTC allows high-quality audio/video communication and peer-to-peer file-sharing straight from the
-      browser. However it can pose as a privacy leak. To learn more, check out this guide.
+      browser. However it can leak your real IP address when using a proxy or some VPNs. You can
+      [check if you're affected here](https://browserleaks.com/webrtc).
 
   - point: Spoof HTML5 Canvas Sig
     priority: Optional
@@ -571,9 +572,9 @@
 
 
     The big companies providing "free" email service, don't have a good reputation
-    for respecting users privacy: Gmail was caught giving
-    [third parties full access](https://www.wsj.com/articles/techs-dirty-secret-the-app-developers-sifting-through-your-gmail-1530544442)
-    to user emails and also [tracking all of your purchases](https://www.cnbc.com/2019/05/17/google-gmail-tracks-purchase-history-how-to-delete-it.html).
+    for respecting users privacy: Gmail was found
+    [building a list of your purchases](https://www.cnbc.com/2019/05/17/google-gmail-tracks-purchase-history-how-to-delete-it.html)
+    from receipts in your inbox.
     Yahoo was also caught scanning emails in real-time [for US surveillance agencies](https://www.reuters.com/article/us-yahoo-nsa-exclusive-idUSKCN1241YT)
     Advertisers [were granted access](https://thenextweb.com/insider/2018/08/29/both-yahoo-and-aol-are-scanning-customer-emails-to-attract-advertisers)
     to Yahoo and AOL users messages to “identify and segment potential customers by picking up on contextual buying signals, and past purchases.”
@@ -956,12 +957,6 @@
       way that is imperceptible by humans, but will prevent facial recognition systems from being able to recognize
       a given face.
 
-  - point: Consider Spoofing GPS in home vicinity
-    priority: Advanced
-    details: >-
-      Even if you yourself never use social media, there is always going to be others who are not as careful,
-      and could reveal your location.
-
   - point: Consider False Information
     priority: Advanced
     details: >-
@@ -1026,8 +1021,8 @@
   - point: Protect against DNS leaks
     priority: Optional
     details: >-
-      When using a VPN, it is extremely important to exclusively use the DNS server of your VPN provider or
-      secure service.
+      When using a VPN, make sure your DNS requests go through it, not your ISP. Most good VPN apps do this
+      by default, but you can check with a [DNS leak test](https://www.dnsleaktest.com).
 
   - point: Use a secure VPN Protocol
     priority: Optional
@@ -1038,13 +1033,13 @@
   - point: Secure DNS
     priority: Optional
     details: >-
-      Use DNS-over-HTTPS which performs DNS resolution via the HTTPS protocol, encrypting data between you
-      and your DNS resolver.
+      Set up encrypted DNS on your device or router, so it covers every app, not just your browser. See this
+      [list of providers and their addresses](https://adguard-dns.io/kb/general/dns-providers/).
 
   - point: Avoid the free router from your ISP
     priority: Optional
     details: >-
-      Typically they’re manufactured cheaply in bulk in China, with insecure propriety firmware that doesn't
+      Typically they’re manufactured cheaply in bulk in China, with insecure proprietary firmware that doesn't
       receive regular security updates.
 
   - point: Whitelist MAC Addresses
@@ -1071,12 +1066,6 @@
       WiFi SSIDs are scanned, logged, and then published on various websites, which is a serious privacy
       concern for some.
 
-  - point: Hide your SSID
-    priority: Optional
-    details: >-
-      Your router's Service Set Identifier is simply the network name. If it is not visible, it may receive
-      less abuse.
-
   - point: Disable WPS
     priority: Optional
     details: >-
@@ -1094,12 +1083,6 @@
     details: >-
       Do not grant access to your primary WiFi network to visitors, as it enables them to interact with other
       devices on the network.
-
-  - point: Change your Router's Default IP
-    priority: Optional
-    details: >-
-      Modifying your router admin panel's default IP address will make it more difficult for malicious scripts
-      targeting local IP addresses.
 
   - point: Kill unused processes and services on your router
     priority: Optional
@@ -1663,6 +1646,12 @@
     priority: Advanced
     details: >-
       Consider the privacy implications for all household members and adjust device settings for security and privacy, such as disabling devices at certain times.
+
+  - point: Avoid smart devices you don't need
+    priority: Advanced
+    details: >-
+      Every connected device adds risk. If something doesn't need to be smart, a regular version is the
+      safer choice.
   color: red
   softwareLinks:
   - title: Home Automation
@@ -1709,11 +1698,12 @@
       Pay with [Cash](https://awesome-privacy.xyz/finance/other-payment-methods/cash) for local and everyday purchases to avoid financial profiling by institutions.
 
   - point: Use Cryptocurrency for Online Transactions
-    priority: Optional
+    priority: Advanced
     details: >-
-      Opt for privacy-focused cryptocurrencies like
-      [Monero](https://awesome-privacy.xyz/finance/cryptocurrencies/monero) for
-      online transactions to maintain anonymity. Use cryptocurrencies wisely to ensure privacy.
+      Most cryptocurrencies, like Bitcoin, record every transaction on a public ledger, and exchanges tie
+      purchases to your identity. Privacy-focused coins like
+      [Monero](https://awesome-privacy.xyz/finance/cryptocurrencies/monero) help with this, but have a
+      steeper learning curve.
 
   - point: Store Crypto Securely
     priority: Advanced
@@ -1766,7 +1756,7 @@
   intro: >-
     Many data breaches, hacks and attacks are caused by human error.
     The following list contains steps you should take, to reduce the risk of this
-    happening to you. Many of them are common sense, but it's worth takin note of.
+    happening to you. Many of them are common sense, but it's worth taking note of.
 
   checklist:
   - point: Verify Recipients
@@ -1954,6 +1944,10 @@
   - point: Protect your Home Address
     priority: Optional
     details: Use alternative locations, forwarding addresses, and anonymous payment methods to protect your home address.
+
+  - point: Use a Portable Door Lock When Travelling
+    priority: Optional
+    details: Other people may have keys to your hotel or rental room. A portable door lock or door alarm is cheap, and makes it much harder for anyone to get in unnoticed.
 
   - point: Use a PIN, Not Biometrics
     priority: Advanced
