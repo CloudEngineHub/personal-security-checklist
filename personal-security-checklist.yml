@@ -334,7 +334,7 @@
       A popular option is [CloudFlare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare)'s [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1), or compare providers- it is simple to enable in-browser.
       Note that DoH comes with its own issues, mostly preventing web filtering.
 
-  - point: Multi-Session Containers
+  - point: Compartmentalise Your Browsing
     priority: Essential
     details: >-
       Compartmentalisation is really important to keep different aspects of your browsing separate. For
