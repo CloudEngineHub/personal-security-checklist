@@ -45,7 +45,7 @@ export default component$(() => {
     renderer.link = function ({ href, title, tokens }) {
       const text = this.parser.parseInline(tokens);
       if (href.startsWith('/')) {
-        href = `https://github.com/Lissy93/personal-security-checklist/blob/old-version/${href}`;
+        href = `https://github.com/Lissy93/personal-security-checklist/blob/master${href}`;
       }
       const titleAttr = title ? `title="${title}"` : '';
       return `<a href="${href}" ${titleAttr} target="_blank" rel="noopener noreferrer">${text}</a>`;

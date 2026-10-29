@@ -68,7 +68,7 @@ Alternatively, fork the repo and import it into any static hosting provider, lik
 We also have a Docker image published to GHCR and DockerHub ([`lissy93/personal-security-checklist`](hub.docker.com/r/lissy93/personal-security-checklist)).
 It's ~11 MB, runs as a non-root user, works on `amd64`, `arm64` and `armv7`, and gets rebuilt whenever the checklist changes, serving the site with nginx on port 8080.
 
-Either see the [`docker-compose.yml`](https://github.com/Lissy93/personal-security-checklist/blob/HEAD/docker/docker-compose.yml), or just use the following Docker run command:
+Either see the [`docker-compose.yml`](https://github.com/Lissy93/personal-security-checklist/blob/HEAD/docker/compose.yml), or just use the following Docker run command:
 
 ```bash
 docker run -d -p 8080:8080 lissy93/personal-security-checklist
@@ -113,11 +113,6 @@ Before submitting an issue or PR, please ensure you've followed the [community g
 ### Contributors
 
 ![contributors badge](https://readme-contribs.as93.net/contributors/lissy93/personal-security-checklist?perRow=16&limit=96)
-
-
-### Stargzers
-
-![stargazers badge](https://readme-contribs.as93.net/stargazers/lissy93/personal-security-checklist?perRow=16&limit=64)
 
 
 ## Credits

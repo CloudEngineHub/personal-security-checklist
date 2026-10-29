@@ -14,7 +14,7 @@ This could be sensitive documents (such as medical records, bank statements, car
 One of the most common data collection methods is web tracking. This is when websites use cookies, device fingerprints, and other methods to identify you, and follow you around the web. It is often done for advertising, analytics, and personalization. When aggregated together, this data can paint a very detailed picture of who you are.
 
 ## How is Data Stored?
-Data that has been collected is typically stored in databases on a server. These servers are rarely owned by the companies managing them, [56% of servers](https://www.canalys.com/newsroom/global-cloud-market-Q3-2019) are owned by Amazon AWS, Google Cloud, and Microsoft Azure. If stored correctly the data will be encrypted, and authentication required to gain access. However that usually isn't the case, and large data leaks [occur almost daily](https://selfkey.org/data-breaches-in-2019/). As well as that data breaches occur, when an adversary compromises a database storing personal data. In fact, you've probably already been caught up in a data breach (check your email, at [have i been pwned](https://haveibeenpwned.com))
+Data that has been collected is typically stored in databases on a server. These servers are rarely owned by the companies managing them, [56% of servers](https://www.canalys.com/newsroom/global-cloud-market-Q3-2019) are owned by Amazon AWS, Google Cloud, and Microsoft Azure. If stored correctly the data will be encrypted, and authentication required to gain access. However that usually isn't the case, and large data leaks [occur almost daily](https://web.archive.org/web/20191215024735/https://selfkey.org/data-breaches-in-2019/). As well as that data breaches occur, when an adversary compromises a database storing personal data. In fact, you've probably already been caught up in a data breach (check your email, at [have i been pwned](https://haveibeenpwned.com))
 
 ## What is Personal Data Used For?
 
@@ -77,10 +77,10 @@ For online privacy to be effective, it needs to be adopted my the masses, and no
 ----
 
 ## Further Links
-- [Ultimate Personal Security Checklist](/README.md)
+- [Ultimate Personal Security Checklist](/CHECKLIST.md)
 - [Privacy-Respecting Software](https://github.com/Lissy93/awesome-privacy)
-- [Privacy & Security Gadgets](/6_Privacy_and-Security_Gadgets.md)
-- [Further Links + More Awesome Stuff](/4_Privacy_And_Security_Links.md)
+- [Privacy & Security Gadgets](/articles/6_Privacy_and-Security_Gadgets.md)
+- [Further Links + More Awesome Stuff](/articles/4_Privacy_And_Security_Links.md)
 
 ----
 
@@ -88,12 +88,12 @@ For online privacy to be effective, it needs to be adopted my the masses, and no
 
 *Thanks for visiting, hope you found something useful here :) Contributions are welcome, and much appreciated - to propose an edit [raise an issue](https://github.com/Lissy93/personal-security-checklist/issues/new/choose), or [open a PR](https://github.com/Lissy93/personal-security-checklist/pull/new/master). See: [`CONTRIBUTING.md`](/.github/CONTRIBUTING.md).*
 
-*I owe a lot of thanks others who've conducted research, written papers, developed software all in the interest of privacy and security. Full attributions and references found in [`ATTRIBUTIONS.md`](/ATTRIBUTIONS.md).*
+*I owe a lot of thanks others who've conducted research, written papers, developed software all in the interest of privacy and security. Full attributions and references found in [`ATTRIBUTIONS.md`](/articles/ATTRIBUTIONS.md).*
 
 
 *Licensed under [Creative Commons, CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), © [Alicia Sykes](https://aliciasykes.com) 2020*
 
-[![Attribution 4.0 International](https://licensebuttons.net/l/by/3.0/88x31.png)](https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE.md)
+[![Attribution 4.0 International](https://licensebuttons.net/l/by/3.0/88x31.png)](https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE)
 
 ----
 
